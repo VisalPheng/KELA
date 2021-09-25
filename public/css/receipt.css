@@ -1,0 +1,174 @@
+.bill {
+    flex-direction: column;
+  }
+  
+  section.products {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section.products > div {
+    background-color: #E7E5DD;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1rem;
+    position: relative;
+    margin: 1rem;
+    flex: 0 0 20%;
+    text-align: center;
+    cursor: pointer;
+  }
+  /* Solving click event bug */
+  section.products > div:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  section.products > div > img {
+    max-height: 5rem;
+    max-width: 5rem;
+    margin-bottom: 1rem;
+  }
+  section.products > div > p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  section.bill {
+    background-color: #E7E5DD;
+    box-sizing: border-box;
+    flex: 0 0 30%;
+    padding: 2rem;
+  }
+  section.bill > .bill-products {
+    border-bottom: 1px solid #BDBBAD;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+  section.bill > .bill-products p {
+    margin: 0;
+  }
+  section.bill form .hidden {
+    display: none;
+  }
+  section.bill form > div {
+    margin-bottom: 0.5rem;
+  }
+  section.bill form label {
+    display: none;
+  }
+  section.bill form input[type="text"] {
+    display: block;
+    background: transparent;
+    border: 1px solid #BDBBAD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #56514B;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+  section.bill form input[type="submit"] {
+    display: block;
+    background: #56514B;
+    border: 1px solid #56514B;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #E7E5DD;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+  }
+  section.bill form input[type="submit"]:hover {
+    background: #E7E5DD;
+    border: 1px solid #56514B;
+    color: #56514B;
+  }
+  
+  section.bill-print {
+    display: block;
+    border: 1px solid #56514B;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    max-width: 350px;
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+  section.bill-print h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  section.bill-print p {
+    margin: 0;
+  }
+  section.bill-print p span {
+    display: inline-block;
+  }
+  section.bill-print .bill-print-user p span:last-of-type,
+  section.bill-print .bill-print-products p span:last-of-type,
+  section.bill-print .bill-print-status p span:last-of-type {
+    font-weight: bold;
+    text-align: right;
+    float: right;
+  }
+  section.bill-print .bill-print-products p:first-of-type {
+    font-weight: bold;
+  }
+  section.bill-print .bill-print-header {
+    text-align: center;
+  }
+  section.bill-print .bill-print-user {
+    border-top: 1px solid #56514B;
+    border-bottom: 1px solid #56514B;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
+  section.bill-print .bill-print-total p {
+    border-top: 1px solid #56514B;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+  section.bill-actions button {
+    display: block;
+    background: #ff5d5d;
+    border: 1px solid #56514B;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #E7E5DD;
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 350px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+  }
+  section.bill-actions button:hover {
+    background: #ff1313;
+    border: 1px solid #56514B;
+    color: #ffffff;
+  }
+  @media print {
+    body *{
+      margin: 0;
+      visibility: hidden;
+    }
+    .bill-actions {
+      display: none;
+    }
+    .bill *{
+      visibility: visible;
+    }
+  }
+  section.bill-print .bill-print-status {
+    border-top: 1px solid #56514B;
+    border-bottom: 1px solid #56514B;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }

@@ -1,0 +1,92 @@
+.u-section-1 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../assets/arseny-togulev-xjnSIF9keGY-unsplash.jpg");
+  }
+  
+  .u-section-1 .u-sheet-1 {
+    min-height: 400px;
+  }
+  
+  .u-section-1 .u-text-1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 3.75rem;
+    margin: 60px auto;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-1 {
+      background-position: 50% 50%;
+    }
+  
+    .u-section-1 .u-sheet-1 {
+      min-height: 454px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 300px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 300px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      margin-left: 51px;
+      margin-right: 51px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 300px;
+    }
+  
+    .u-section-1 .u-text-1 {
+      font-size: 1.875rem;
+      margin-left: 33px;
+      margin-right: 33px;
+    }
+}
+
+.img-side {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card-img-top {
+      height: 19vw;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-img-top {
+      height: 16vw;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 11vw;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+  .card-img-top {
+      height: 11vw;
+  }
+}
